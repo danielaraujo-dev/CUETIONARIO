@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Untitled-1.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="formulario" id="form">
+        <!--Título del formulario-->
+        <h1 class="titulo">Agregue su información acá</h1>
+        <!--Primera parte del formulario/ Información Básica/ Nombre, apellido, mail, fecha de nacimiento-->
+        <input type="text" class="formulario-input" required>
+        <label for="formulario-label" class="formulario-label">Nombre</label>
+
+        <input type="text" class="formulario-input" required>
+        <label for="formulario-label" class="formulario-label">Apellido</label>
+
+        <input type="email" class="formulario-input" required>
+        <label for="formulario-label" class="formulario-label">E-mail</label>
+
+        <label for="formulario-label" class="formulario-label-date">Fecha de Nacimiento</label>
+        <input type="date" class="formulario-date" required>
+
+        <!--Género-->
+
+        <div class="genero">
+            <p>Indique su género</p>
+        <select id="dropdown" name="role" class="form-genero" required>
+        <option disabled selected value>Seleccione</option> 
+        <option value="0"> Hombre</option>
+        <option value="1"> Mujer</option>
+        <option value="2"> No binario</option>
+        <option value="3"> Prefiero No decirlo</option>
+        <option value="5"> No se encuentra en las opciones</option>
+        </select>
+        </div>
+
+        <!--Conocer si posee alguna enfermedad-->
+
+
+        <div class="form-group">
+            <p>¿Posee Alguna Enfermedad?</p>
+            <label>
+            <input
+               name="enfermedad"
+               value="yes"
+               type="radio"
+               class="input-radio"
+               required
+                   />Si</lable>
+               <label>
+            <input
+               name="enfermedad"
+               value="no"
+               type="radio"
+               class="input-radio"
+               required
+                   />No</lable>
+          </div>
+
+        <input type="text" class="formulario-input" required>
+        <label for="formulario-label" class="formulario-label">Explíquenos</label>
+
+        <input type="submit" class="formulario-submit">
+
+    </form>
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
